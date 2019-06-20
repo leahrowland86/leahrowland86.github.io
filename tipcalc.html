@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tip Calculator</title>
+    <meta http-equiv='content-type' content='text/html' charset="utf-8">
+    <style>
+    </style>
+    <link href='css/tipcalc.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+
+    <div  id="calculator">
+
+    <form class="" action="index.html" method="post">
+      <p>How much was your bill?</p>
+      <input id="billamount" type="currency" placeholder="Bill amount">
+
+      <p>Tip amount: </p>
+      <select id="tippercentage">
+        <option value="">Select</option>
+        <option value="0.3">30&#37;</option>
+        <option value="0.2">20&#37;</option>
+        <option value="0.15">15&#37;</option>
+        <option value="0.1">10&#37;</option>
+        <option value="0.05">5&#37;</option>
+        <option value="">Other</option>
+      </select>
+    </form>
+
+    <!-- <p>Other tip amount: </p>
+    <form id="othertip">
+        <input id="othertipamountpercent" type="radio" name="tiptype" onclick="javascript:otherTipCalcPercentAmount();">Percent
+        <label for="othertipamountpercent">: Please enter other tip amount below</label>
+        <div id="tipamountpercentdiv" style="display:none">
+          <input type="number" name="" id="tipamountpercent" value="" placeholder="Tip %" /> <br>
+        </div>
+
+      <br>
+
+      <input id="othertipamountdollar" type="radio" name="tiptype" onclick="javascript:otherTipCalcDollarAmount();">Dollar
+      <label for="othertipamountdollar">: Please enter dollar amount below</label>
+      <div id="tipamountdollardiv" style="display:none">
+        <input type="number" name="" id="tipamountdollar" value="" placeholder="Tip $" /> <br>
+      </div>
+      </form> -->
+
+    <div id="totalTip">
+    <big><span class="text" id="bill">$0.00 + </span></big> <br>
+    <sup><span class="text" id="tip">$0.00 = </span></sup> <br>
+    <strong><big><span class="text" id="total">$0.00</span></big></strong> <br>
+    <br>
+    <br>
+
+    <!-- <div class="">
+      <sup><span class="text" id="othertip1">$0.00 = </span></sup> <br>
+      <big><span class="text" id="totalpercent">$0.00</span></big> <br>
+      <br>
+      <br>
+    </div>
+    <div class="">
+      <sup><span class="text" id="othertip2">$0.00 = </span></sup> <br>
+      <big><span class="text" id="totaldollar">$0.00</span></big>
+    </div> -->
+    </div>
+
+    <script type="text/javascript" src="tipcalculator.js"></script>
+</div>
+  </body>
+</html>
