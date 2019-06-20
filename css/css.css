@@ -12,7 +12,7 @@ body {
   }
 
 .main {
-  height: 1000px;
+  height: 100vh;
   margin: 0 auto;
   display: block;
   padding-top: 250px;
@@ -21,13 +21,13 @@ body {
 
 .about {
   background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC);
-  height: 1000px;
+  height: 100vh;
   padding-top: 300px;
 }
 
 .resume {
   background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC);
-  height: 1000px;
+  height: 100vh;
   padding-top: 30px;
   text-align: center;
   /* width: 750px;
