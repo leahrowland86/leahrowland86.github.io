@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projects</title>
+    <meta http-equiv='content-type' content='text/html' charset="utf-8">
+    <style>
+    </style>
+    <link href='css/projects.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+  <div class="projects">
+    <!-- <div class="tipproject"> -->
+      <div class="tipcalculator"  id="calculator">
+        <form class="" action="index.html" method="post">
+          <p>How much was your bill?</p>
+          <input id="billamount" type="currency" placeholder="Bill amount">
+          <p>Tip amount: </p>
+          <select id="tippercentage">
+            <option value="">Select</option>
+            <option value="0.3">30&#37;</option>
+            <option value="0.2">20&#37;</option>
+            <option value="0.15">15&#37;</option>
+            <option value="0.1">10&#37;</option>
+            <option value="0.05">5&#37;</option>
+            <option value="">Other</option>
+          </select>
+        </form>
+        <div id="totalTip">
+          <big><span class="text" id="bill">$0.00 + </span></big> <br>
+          <sup><span class="text" id="tip">$0.00 = </span></sup> <br>
+          <strong><big><span class="text" id="total">$0.00</span></big></strong> <br>
+          <br>
+          <br>
+        </div>
+        <script type="text/javascript" src="tipcalculator.js"></script>
+      </div>
+      <div class="tipcontainer">
+        <div class='codeheader'>
+          Javascript
+        </div>
+        <div class="code">
+          function billCalcAmount() {
+            let billAmount = Number(document.getElementById("billamount").value);
+            document.getElementById("bill").innerHTML = "$" + billAmount + " + ";
+            return billAmount;
+          }
+          function tipCalcAmount() {
+            let billAmount = Number(document.getElementById("billamount").value);
+            let tipPercent = Number(document.getElementById("tippercentage").value);
+            let tipAmount = (billAmount * tipPercent);
+            document.getElementById("tip").innerHTML = "$" + tipAmount + " = ";
+            return tipAmount;
+          }
+          function totalCalcAmount() {
+            let billAmount = Number(document.getElementById("billamount").value);
+            let tipPercent = Number(document.getElementById("tippercentage").value);
+            let tipAmount = (billAmount * tipPercent);
+            let totalAmount = (billAmount + tipAmount);
+            document.getElementById("total").innerHTML = "$" + totalAmount;
+            return totalAmount;
+          }
+          let billInput = document.querySelector("#billamount");
+          let totalInput = document.querySelector("#total");
+          billInput.addEventListener('input', function() {
+            billCalcAmount();
+            totalCalcAmount();
+            tipCalcAmount();
+          });
+          let tipInput = document.querySelector("#tippercentage");
+          tipInput.addEventListener('input', function() {
+            tipCalcAmount();
+            billCalcAmount();
+            totalCalcAmount();
+          });
+        </div>
+      </div>
+    <!-- </div> -->
+
+
+<div class="clock">
+  <br>
+  <img src="images/flower1.png" alt="" onmouseover="this.src='images/flower2.png';" onmouseout="this.src='images/flower1.png';">
+  <div class="clocktext">
+    <span id="hour">00</span>
+    <span> : </span>
+    <span id="minute">00</span>
+    <span> : </span>
+    <span id="second">00</span>
+  </div>
+</div>
+
+<div class="clockcontainer">
+  <br>
+<div class='codeheader'>
+  Javascript
+</div>
+<div class="code">
+  let currentTime;
+  let hours;
+  let minutes;
+  let seconds;
+  let animate;
+  function showCurrentTime(){
+      let currentTime = new Date();
+      hours=currentTime.getHours();
+      minutes=currentTime.getMinutes();
+      seconds=currentTime.getSeconds();
+      clock();
+  };
+  function clock(){
+      seconds++;
+      if(seconds==60){
+          seconds=0;
+          minutes++;
+          if(minutes==60){
+              minutes=0;
+              hours++;
+              if(hours==24){
+                  hours=0;
+              }
+          }
+      }
+      time('second',seconds);
+      time('minute',minutes);
+      time('hour',hours);
+      animate=setTimeout(clock,1000);
+  };
+  function time(id,timeValue){
+      if(timeValue < 10){
+          timeValue='0'+timeValue;
+      }
+      document.getElementById(id).innerHTML=timeValue;
+  };
+
+  window.onload=showCurrentTime;
+</div>
+</div>
+
+  </div>
+
+<script type="text/javascript" src="clock.js"></script>
+  </body>
+</html>
