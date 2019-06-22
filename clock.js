@@ -1,43 +1,42 @@
-let currentTime;
-let hours;
-let minutes;
-let seconds;
-let animate;
-
-function showCurrentTime(){
-    let currentTime = new Date();
-
-    hours=currentTime.getHours();
-    minutes=currentTime.getMinutes();
-    seconds=currentTime.getSeconds();
-
-    clock();
+function update12HourClock() {
+let currentTime = new Date();
+let currentHours = currentTime.getHours();
+let currentMinutes = currentTime.getMinutes();
+let currentSeconds = currentTime.getSeconds();
+currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
+let timeOfDay = (currentHours < 12) ? "AM" : "PM";
+currentHours = (currentHours > 12) ? currentHours - 12 : currentHours;
+currentHours = (currentHours == 0) ? "12" : currentHours;
+let currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+document.getElementById("12Hourclock").innerHTML = currentTimeString;
 };
 
-function clock(){
-    seconds++;
-    if(seconds==60){
-        seconds=0;
-        minutes++;
-        if(minutes==60){
-            minutes=0;
-            hours++;
-            if(hours==24){
-                hours=0;
-            }
-        }
+function update24HourClock() {
+  let currentTime = new Date();
+  let currentHours = currentTime.getHours();
+  let currentMinutes = currentTime.getMinutes();
+  let currentSeconds = currentTime.getSeconds();
+  currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+  currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
+  let currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds;
+  document.getElementById("24HourClock").innerHTML = currentTimeString;
+};
+
+function addLoadEvent(func) {
+  let oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
     }
-    time('second',seconds);
-    time('minute',minutes);
-    time('hour',hours);
-    animate=setTimeout(clock,1000);
+  }
 };
 
-function time(id,timeValue){
-    if(timeValue<10){
-        timeValue='0'+timeValue;
-    }
-    document.getElementById(id).innerHTML=timeValue;
-};
+window.setInterval('update12HourClock()', 1000);
+window.setInterval('update24HourClock()', 1000);
 
-window.onload=showCurrentTime;
+addLoadEvent(update12HourClock);
+addLoadEvent(update24HourClock);
