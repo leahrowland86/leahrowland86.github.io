@@ -56,51 +56,8 @@
         </div>
         <script type="text/javascript" src="tipcalculator.js"></script>
       </div>
-      <div class="tipcontainer">
-        <div class='codeheader'>
-          Javascript
-        </div>
-        <div class="code">
-          function billCalcAmount() {
-            let billAmount = Number(document.getElementById("billamount").value);
-            document.getElementById("bill").innerHTML = "$" + billAmount + " + ";
-            return billAmount;
-          }
-          function tipCalcAmount() {
-            let billAmount = Number(document.getElementById("billamount").value);
-            let tipPercent = Number(document.getElementById("tippercentage").value);
-            let tipAmount = (billAmount * tipPercent);
-            document.getElementById("tip").innerHTML = "$" + tipAmount + " = ";
-            return tipAmount;
-          }
-          function totalCalcAmount() {
-            let billAmount = Number(document.getElementById("billamount").value);
-            let tipPercent = Number(document.getElementById("tippercentage").value);
-            let tipAmount = (billAmount * tipPercent);
-            let totalAmount = (billAmount + tipAmount);
-            document.getElementById("total").innerHTML = "$" + totalAmount;
-            return totalAmount;
-          }
-          let billInput = document.querySelector("#billamount");
-          let totalInput = document.querySelector("#total");
-          billInput.addEventListener('input', function() {
-            billCalcAmount();
-            totalCalcAmount();
-            tipCalcAmount();
-          });
-          let tipInput = document.querySelector("#tippercentage");
-          tipInput.addEventListener('input', function() {
-            tipCalcAmount();
-            billCalcAmount();
-            totalCalcAmount();
-          });
-        </div>
-      </div>
-    <!-- </div> -->
-
 
 <div class="clock">
-  <br>
   <img src="images/flower1.png" alt="" onmouseover="this.src='images/flower2.png';" onmouseout="this.src='images/flower1.png';">
   <div class="clocktext">
     <span id="hour">00</span>
@@ -109,53 +66,6 @@
     <span> : </span>
     <span id="second">00</span>
   </div>
-</div>
-
-<div class="clockcontainer">
-  <br>
-<div class='codeheader'>
-  Javascript
-</div>
-<div class="code">
-  function update12HourClock() {
-  let currentTime = new Date();
-  let currentHours = currentTime.getHours();
-  let currentMinutes = currentTime.getMinutes();
-  let currentSeconds = currentTime.getSeconds();
-  currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
-  currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
-  let timeOfDay = (currentHours < 12) ? "AM" : "PM";
-  currentHours = (currentHours > 12) ? currentHours - 12 : currentHours;
-  currentHours = (currentHours == 0) ? "12" : currentHours;
-  let currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
-  document.getElementById("12Hourclock").innerHTML = currentTimeString;
-  };
-  function update24HourClock() {
-    let currentTime = new Date();
-    let currentHours = currentTime.getHours();
-    let currentMinutes = currentTime.getMinutes();
-    let currentSeconds = currentTime.getSeconds();
-    currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
-    currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
-    let currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds;
-    document.getElementById("24HourClock").innerHTML = currentTimeString;
-  };
-  function addLoadEvent(func) {
-    let oldonload = window.onload;
-    if (typeof window.onload != 'function') {
-      window.onload = func;
-    } else {
-      window.onload = function() {
-        oldonload();
-        func();
-      }
-    }
-  };
-  window.setInterval('update12HourClock()', 1000);
-  window.setInterval('update24HourClock()', 1000);
-  addLoadEvent(update12HourClock);
-  addLoadEvent(update24HourClock);
-</div>
 </div>
 
   </div>
