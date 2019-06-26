@@ -4,9 +4,9 @@ html {
 }
 
 body {
-  background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC);
+  /* background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC); */
   font-family: Arial, Helvetica, sans-serif;
-  color: #f5f5f5;
+  color: #4E4E4E;
   margin: 0px;
   padding: 0px;
   }
@@ -15,18 +15,19 @@ body {
   height: 100vh;
   margin: 0 auto;
   display: block;
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 300px;
+  padding-bottom: 300px;
 }
 
 .about {
-  background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC);
+  /* background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC); */
   height: 100vh;
   padding-top: 300px;
+  padding-bottom: 300px;
 }
 
 .resume {
-  background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC);
+  /* background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC); */
   height: 100vh;
   padding-top: 30px;
   text-align: center;
@@ -56,37 +57,37 @@ body {
 .resumepdf {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #ffff;
+  color: #4E4E4E;
 }
 
 .emaillink {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #ffff;
+  color: #4E4E4E;
 }
 
 ol {
-  color: #ffff;
+  color: #4E4E4E;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 li {
-  color: #ffff;
+  color: #4E4E4E;
   display: inline;
 }
 
 .list {
-  color: #ffff;
+  color: #4E4E4E;
 }
 
   Footer{
-   background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC);
+   /* background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC); */
    left: 0;
    bottom: 0;
    width: 100%;
-   color: #ffff;
+   color: #4E4E4E;
    text-align: center;
    margin: 0px;
    padding: 0px;
@@ -112,6 +113,13 @@ li {
    font-size: 16px;
    text-align: center;
    font-weight: bold;
+ }
+
+ header {
+   background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC);
+   height: 45px;
+   position: fixed;
+   width: 100%;
  }
 
  .navbar-bar {

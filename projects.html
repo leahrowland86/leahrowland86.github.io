@@ -9,25 +9,28 @@
     <link href='css/css.css' rel='stylesheet' type='text/css' />
   </head>
   <body>
-    <div id="header" class='navbar-bar'>
-      <ul>
-        <li>
-          <a class="list" href="index.html">Home</a>
-        </li>
-        <span class='placeholder'></span>
-        <li>
-          <a class="list" href="https://www.linkedin.com/in/leah-rowland-4840968b/" target="_blank">LinkedIn</a>
-        </li>
-        <span class='placeholder'></span>
-        <li>
-          <a class="list" href="https://github.com/leahrowland86" target="_blank">Github</a>
-        </li>
-        <span class='placeholder'></span>
-        <li>
-          <a class="list" href="projects.html">Projects</a>
-        </li>
-      </ul>
-    </div>
+    <header>
+      <div id="header" class='navbar-bar'>
+        <ul>
+          <li>
+            <a class="list" href="index.html">Home</a>
+          </li>
+          <span class='placeholder'></span>
+          <li>
+            <a class="list" href="https://www.linkedin.com/in/leah-rowland-4840968b/" target="_blank">LinkedIn</a>
+          </li>
+          <span class='placeholder'></span>
+          <li>
+            <a class="list" href="https://github.com/leahrowland86" target="_blank">Github</a>
+          </li>
+          <span class='placeholder'></span>
+          <li>
+            <a class="list" href="projects.html">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <br>
     <br>
     <br>
   <div class="projects">
@@ -48,23 +51,28 @@
           </select>
         </form>
         <div id="totalTip">
-          <big><span class="text" id="bill">$0.00 + </span></big> <br>
-          <sup><span class="text" id="tip">$0.00 = </span></sup> <br>
-          <strong><big><span class="text" id="total">$0.00</span></big></strong> <br>
+          <big><span class="text" id="bill">$0.00 + </span></big>
+          <big><span class="text" id="tip">$0.00 = </span></big> <br>
+          <strong><big><span class="totaltext" id="total">$0.00</span></big></strong> <br>
           <br>
           <br>
         </div>
         <script type="text/javascript" src="tipcalculator.js"></script>
       </div>
 
-      <div class="clock">
-        <img src="images/flower1.png" alt="" onmouseover="this.src='images/flower2.png';" onmouseout="this.src='images/flower1.png';">
-        <div class="clocktext">
-          <span id = "12Hourclock"></span>
-          <br> <br>
-          <span id = "24HourClock"></span>
-        </div>
+    <div class="clock">
+      <img src="images/flower1.png" alt="" onmouseover="this.src='images/flower2.png';" onmouseout="this.src='images/flower1.png';">
+      <div class="clocktext">
+        <span id = "12Hourclock"></span>
+        <br> <br>
+        <span id = "24HourClock"></span>
       </div>
+    </div>
+
+    <div class="game">
+      <button onclick="window.location.href='game.html';" target="_blank">Shall We Play a Game?</button>
+
+    </div>
 
   </div>
 
