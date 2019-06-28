@@ -9,22 +9,22 @@
     <link href='css/css.css' rel='stylesheet' type='text/css' />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div id="header" class='navbar-bar'>
         <ul>
-          <li>
+          <li class="headerlist">
             <a class="list" href="index.html">Home</a>
           </li>
           <span class='placeholder'></span>
-          <li>
+          <li class="headerlist">
             <a class="list" href="https://www.linkedin.com/in/leah-rowland-4840968b/" target="_blank">LinkedIn</a>
           </li>
           <span class='placeholder'></span>
-          <li>
+          <li class="headerlist">
             <a class="list" href="https://github.com/leahrowland86" target="_blank">Github</a>
           </li>
           <span class='placeholder'></span>
-          <li>
+          <li class="headerlist">
             <a class="list" href="projects.html">Projects</a>
           </li>
         </ul>
@@ -34,11 +34,10 @@
     <br>
     <br>
   <div class="projects">
-    <!-- <div class="tipproject"> -->
       <div class="tipcalculator"  id="calculator">
         <form class="" action="index.html" method="post">
           <p>How much was your bill?</p>
-          <input id="billamount" type="currency" placeholder="Bill amount">
+          <input class="tipinput" id="billamount" type="currency" placeholder="Bill amount">
           <p>Tip amount: </p>
           <select id="tippercentage">
             <option value="">Select</option>
@@ -53,29 +52,51 @@
         <div id="totalTip">
           <big><span class="text" id="bill">$0.00 + </span></big>
           <big><span class="text" id="tip">$0.00 = </span></big> <br>
-          <strong><big><span class="totaltext" id="total">$0.00</span></big></strong> <br>
+          <strong><big><span class="totaltiptext" id="total">$0.00</span></big></strong> <br>
           <br>
           <br>
         </div>
         <script type="text/javascript" src="tipcalculator.js"></script>
       </div>
 
+      <br>
+      <br>
+      <br>
+
     <div class="clock">
-      <img src="images/flower1.png" alt="" onmouseover="this.src='images/flower2.png';" onmouseout="this.src='images/flower1.png';">
+      <img class="clockimage" src="images/flower1.png" alt="" onmouseover="this.src='images/flower2.png';" onmouseout="this.src='images/flower1.png';">
       <div class="clocktext">
         <span id = "12Hourclock"></span>
         <br> <br>
         <span id = "24HourClock"></span>
       </div>
+      <script type="text/javascript" src="clock.js"></script>
     </div>
 
-    <div class="game">
-      <button onclick="window.location.href='game.html';" target="_blank">Shall We Play a Game?</button>
+    <br>
+    <br>
+    <br>
 
+    <div class="todooutline">
+      <input class="todoinput" id="input" placeholder="To Do!">
+      <img src="/Users/leahrowland/Desktop/Leah/Project/images/reminder.png" style="width:20px;height:20px;" onclick="reminderNote()">
+      <div class="list">
+        <ul id="list">
+        </ul>
+      </div>
+      <script type="text/javascript" src="to do list.js"></script>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="game">
+      <br>
+      <button onclick="window.location.href='game.html';" target="_blank">Shall We Play a Game?</button>
     </div>
 
   </div>
+</body>
 
-<script type="text/javascript" src="clock.js"></script>
-  </body>
 </html>

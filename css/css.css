@@ -73,7 +73,7 @@ ol {
   padding: 0;
 }
 
-li {
+.headerlist {
   color: #4E4E4E;
   display: inline;
 }
@@ -139,6 +139,7 @@ li {
  .navbar-toggler {
    background-color: blue;
  }
+
  .navbar-brand {
    font-size: 1.6rem;
    font-weight: 600;
