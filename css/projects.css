@@ -21,7 +21,7 @@
 
 .tipcalculator {
   width: 25vw;
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
   border: solid grey;
   border-radius: 7.5px;
@@ -40,7 +40,7 @@
 
 .clockcontainer {
   width: 25vw;
-  margin: 0 auto;
+  margin: auto;
   font: 'Bungee', Helvetica, Arial, sans-serif;
   color: #4E4E4E;
   text-align: center;
@@ -74,7 +74,7 @@
 .todooutline {
   width: 25vw;
   height: 225px;
-  margin: 0 auto;
+  margin: auto;
   border: solid grey;
   border-radius: 7.5px;
   overflow: scroll;
