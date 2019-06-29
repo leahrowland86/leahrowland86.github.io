@@ -17,6 +17,11 @@ body {
   }
 
 .main {
+  background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
   height: 100vh;
   width: 100vw;
   margin: 0 auto;
@@ -123,33 +128,11 @@ ol {
    font-weight: bold;
  }
 
- header {
+ .navbar {
    background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC);
    height: 45px;
    position: fixed;
    width: 100%;
- }
-
- .navbar-bar {
-   /* right: 0; */
-   /* position: fixed; */
-   width: 100%;
- }
-
- .navbar-b{
-   transition-property: all;
-   transition-duration: 0.5s;
-   transition-timing-function: ease-in-out;
-   transition-delay: 0s;
-   background-color: transparent;
-   font-weight: 600;
- }
-
- .navbar-toggler {
-   background-color: blue;
- }
-
- .navbar-brand {
-   font-size: 1.6rem;
-   font-weight: 600;
+   display: flex run-in;
+   flex-wrap: wrap;
  }
