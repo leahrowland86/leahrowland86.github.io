@@ -5,7 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  border: solid red;
+  /* border: solid red; */
   display: flex run-in;
   flex-wrap: wrap;
   margin-left: -.4rem;
