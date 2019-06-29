@@ -1,11 +1,10 @@
 .projects {
   width: 100vw;
-  margin: auto;
+  margin: 0 auto;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  /* border: solid red; */
   display: flex run-in;
   flex-wrap: wrap;
   margin-left: -.4rem;
@@ -22,7 +21,7 @@
 
 .tipcalculator {
   width: 25vw;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   border: solid grey;
   border-radius: 7.5px;
@@ -41,14 +40,13 @@
 
 .clockcontainer {
   width: 25vw;
-  margin: auto;
+  margin: 0 auto;
   font: 'Bungee', Helvetica, Arial, sans-serif;
   color: #4E4E4E;
   text-align: center;
   color: white;
   font-size: 2vw;
   position: relative;
-  /* border: dashed blue; */
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -76,7 +74,7 @@
 .todooutline {
   width: 25vw;
   height: 225px;
-  margin: auto;
+  margin: 0 auto;
   border: solid grey;
   border-radius: 7.5px;
   overflow: scroll;
@@ -90,13 +88,11 @@
   margin: 0;
   border-radius: 7.5px;
   border-color: #4E4E4E;
-
   color: #555;
   padding: 0;
   width: 300px;
   font-family: courier, monospace;
   border: 1px solid #dedede;
-
   border-bottom: 1px dotted #ccc;
   height: auto;
   padding: 10px;
@@ -115,6 +111,6 @@
 
 .game {
   width: 10vw;
-  margin: auto;
+  margin: 0 auto;
   height: 5vh;
 }
