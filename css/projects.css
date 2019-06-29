@@ -1,54 +1,55 @@
-html {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #4E4E4E;
-  text-align: center;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: auto;
-  padding: auto;
-  text-align: center;
-  }
-
 .projects {
-  width: 50%;
+  width: 100vw;
   margin: auto;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  /* border: solid red; */
+  border: solid red;
+  display: flex run-in;
+  flex-wrap: wrap;
+  margin-left: -.4rem;
+  margin-right: -.4rem;
+}
+
+.tiptext {
+  font-size: 1vw;
 }
 
 .totaltiptext {
-  font-size: 36px;
+  font-size: 2vw;
 }
 
 .tipcalculator {
-  width: 50%;
+  width: 25vw;
   margin: auto;
   text-align: center;
-  border: solid;
+  border: solid grey;
   border-radius: 7.5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.clockproject {
-  /* border: solid green; */
-  width: 50%;
+.tipinput {
+  display: flex run-in;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 10vw;
+  height: 3vh;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.20);
+  border-radius: 3px;
 }
 
 .clockcontainer {
-  /* border: dashed blue; */
+  width: 25vw;
   margin: auto;
-}
-
-.clock {
-  font: 14px/26px 'Bungee', Helvetica, Arial, sans-serif;
+  font: 'Bungee', Helvetica, Arial, sans-serif;
   color: #4E4E4E;
   text-align: center;
   color: white;
-  font-size: 40px;
+  font-size: 2vw;
   position: relative;
+  /* border: dashed blue; */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .clocktext {
@@ -58,30 +59,29 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.clockimage {
-  width: 95%;
-  height: auto;
-}
-
 .todoinput {
   margin-top: 5px;
-  width: 300px;
-  height: 30px;
+  width: 20vw;
+  height: 3vh;
   font-size: 20px;
   border-radius: 3.5px;
   border-color: grey;
   text-align: center;
   background: #f5f5f5;
+  display: flex run-in;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
 .todooutline {
-  width: 400px;
-  height: 300px;
-  border: solid;
+  width: 25vw;
+  height: 225px;
+  margin: auto;
+  border: solid grey;
   border-radius: 7.5px;
-  border-color: grey;
   overflow: scroll;
   word-wrap: break-word;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .lilist {
@@ -111,4 +111,10 @@ body {
   -moz-transition:    all 0.2s;
   -ms-transition:     all 0.2s;
   -o-transition:      all 0.2s;
+}
+
+.game {
+  width: 10vw;
+  margin: auto;
+  height: 5vh;
 }
