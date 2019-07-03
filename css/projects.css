@@ -2,11 +2,9 @@
   width: 100vw;
   margin: auto;
   height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
   text-align: center;
-  display: flex run-in;
-  flex-wrap: wrap;
+  /* display: flex; REMOVED
+  flex-wrap: wrap; */
   margin-left: -.4rem;
   margin-right: -.4rem;
 }
