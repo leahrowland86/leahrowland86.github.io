@@ -1,98 +1,3 @@
-<<<<<<< HEAD
-input[type=radio]:checked + label {
-  color: #4E4E4E;
-  font-style: normal;
-  opacity: 1;
-}
-
-input[type=radio] + label {
-  color: #4E4E4E;
-  font-style: italic;
-  opacity: 0.0;
-}
-
-body {
-  /* background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC); */
-  font-family: Arial, Helvetica, sans-serif;
-  color: #4E4E4E;
-  margin: auto;
-  padding: auto;
-  text-align: center;
-  }
-
-.projects {
-  width: 50%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  /* border: solid red; */
-}
-
-.totaltext {
-  font-size: 36px;
-}
-
-.tipproject {
-  /* margin: auto; */
-  width: 100%;
-  /* text-align: center; */
-  border: solid green;
-}
-
-.tipcalculator {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  border: solid;
-  border-radius: 7.5px;
-  /* border: dashed purple; */
-}
-
-.tipcontainer {
-  /* border: dashed blue; */
-  margin: auto;
-}
-
-.code {
-  height: 200px;
-  width: 100%;
-  overflow: scroll;
-  font-size: 10px;
-  text-align: left;
-  background-color: #000000;
-  border: 5px solid #000000;
-  white-space: pre-wrap;
-  float: left;
-  clear: left;
-  /* border: solid orange; */
-}
-
-.clockproject {
-  /* border: solid green; */
-  width: 50%;
-}
-
-.clockcontainer {
-  /* border: dashed blue; */
-  margin: auto;
-}
-
-.codeheader {
-  display: inline-block;
-  margin: 0 auto;
-  float: left;
-  clear: left;
-}
-
-.clock {
-  font: 14px/26px 'Bungee', Helvetica, Arial, sans-serif;
-  color: #4E4E4E;
-  text-align: center;
-  color: white;
-  font-size: 40px;
-  position: relative;
-=======
 .projects {
   width: 100vw;
   margin: auto;
@@ -142,7 +47,6 @@ body {
   font-size: 2vw;
   position: relative;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
->>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
 }
 
 .clocktext {
@@ -152,11 +56,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-<<<<<<< HEAD
-img {
-  width: 95%;
-  height: auto;
-=======
 .todoinput {
   margin-top: 5px;
   width: 20vw;
@@ -213,5 +112,4 @@ img {
   width: 10vw;
   margin: auto;
   height: 5vh;
->>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
 }
