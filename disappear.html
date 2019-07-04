@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Disapear</title>
+        <meta http-equiv='content-type' content='text/html;charset=utf-8'>
+    </head>
+    <style media="screen">
+    </style>
+    <script type="text/javascript">
+    function hide(elementId) {
+      document.getElementById('id1').style.display = 'none';
+    }
+    window.onload = function() {
+      setTimeout("hide('id1')",3000);
+    }
+  </script>
+  <body>
+    <div id='id1'>
+      I'm about to disappear!
+    </div>
+    <script type="text/javascript">
+    </script>
+  </body>
+</html>

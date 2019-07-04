@@ -1,0 +1,145 @@
+/* ~~~~~~~~~~Homepage~~~~~~~~~~ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC); */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4E4E4E;
+  margin: 0px;
+  padding: 0px;
+  }
+
+.main {
+  height: 100vh;
+  margin: 0 auto;
+  display: block;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.about {
+  /* background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC); */
+  height: 100vh;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.resume {
+  /* background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC); */
+  height: 100vh;
+  padding-top: 30px;
+  text-align: center;
+  /* width: 750px;
+  margin: auto; */
+}
+
+.resumeText {
+  font-size: 12px;
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+  text-align: left;
+}
+
+.resumeTextHeader {
+  font-size: 16px;
+  width: 1000px;
+  margin: auto;
+  text-align: left;
+}
+
+.resumeTextFooter {
+  font-size: 12px;
+}
+
+.resumepdf {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4E4E4E;
+}
+
+.emaillink {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4E4E4E;
+}
+
+ol {
+  color: #4E4E4E;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: #4E4E4E;
+  display: inline;
+}
+
+.list {
+  color: #4E4E4E;
+}
+
+  Footer{
+   /* background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC); */
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: #4E4E4E;
+   text-align: center;
+   margin: 0px;
+   padding: 0px;
+ }
+
+ .placeholder{
+   display:
+   inline-block;width: 50px;
+ }
+
+ h1{
+   text-decoration: none;
+   text-align: center;
+   font-size: 22px;
+ }
+ h2{
+   text-decoration: none;
+   text-align: center;
+ }
+
+ p{
+   text-decoration: none;
+   font-size: 16px;
+   text-align: center;
+   font-weight: bold;
+ }
+
+ header {
+   background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC);
+   height: 45px;
+   position: fixed;
+   width: 100%;
+ }
+
+ .navbar-bar {
+   right: 0;
+   position: fixed;
+ }
+
+ .navbar-b{
+   transition-property: all;
+   transition-duration: 0.5s;
+   transition-timing-function: ease-in-out;
+   transition-delay: 0s;
+   background-color: transparent;
+   font-weight: 600;
+ }
+
+ .navbar-toggler {
+   background-color: blue;
+ }
+ .navbar-brand {
+   font-size: 1.6rem;
+   font-weight: 600;
+ }

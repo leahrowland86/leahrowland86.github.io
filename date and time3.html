@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Current Date and Time Electric Boogaloo</title>
+    <meta http-equiv='content-type' content='text/html;charset=utf-8'>
+    <style media="screen">
+      p {
+        font: 14px normal arial, verdana, helvetica;
+      }
+    </style>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+  <script>
+    function dateAndTime() {
+      var month = new Array();
+      month[0] = "January";
+      month[1] = "February";
+      month[2] = "March";
+      month[3] = "April";
+      month[4] = "May";
+      month[5] = "June";
+      month[6] = "July";
+      month[7] = "August";
+      month[8] = "September";
+      month[9] = "October";
+      month[10] = "November";
+      month[11] = "December";
+
+      var mydate = new Date();
+      var monthname = month[mydate.getMonth()];
+
+      document.write("The current date and time are: " + mydate.getDate() + " " + monthname + " " + mydate.getFullYear() + " " + mydate.getHours() + ":" + mydate.getMinutes() + "<br />");
+    }
+    
+    dateAndTime();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <script type="text/javascript" src="calculator.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/calculator.css">
+    </head>
+    <body>
+      <div class="container">
+        <form class="calculator" id="calculator" action="index.html" method="post">
+          <input type="text" name="inputwindow" id="inputwindow"><br>
+          <input type="text" name="displaywindow" id="displaywindow">
+          <div class="">
+            <input name="calcbtn" type="button" id="one" value="1"  onclick="getValue(document.getElementById('one').value)">
+            <input type="button" id="two" value="2" onclick="getValue(document.getElementById('two').value)">
+            <input type="button" id="three" value="3" onclick="getValue(document.getElementById('three').value)">
+            <input type="button" id="plus" value="+" onclick="getValue(document.getElementById('plus').value)">
+          </div>
+          <div class="">
+            <input type="button" id="four" value="4" onclick="getValue(document.getElementById('four').value)">
+            <input type="button" id="five" value="5" onclick="getValue(document.getElementById('five').value)">
+            <input type="button" id="six" value="6" onclick="getValue(document.getElementById('six').value)">
+            <input type="button" id="minus" value="-" onclick="getValue(document.getElementById('minus').value)">
+          </div>
+          <div class="">
+            <input type="button" id="seven" value="7" onclick="getValue(document.getElementById('seven').value)">
+            <input type="button" id="eight" value="8" onclick="getValue(document.getElementById('eight').value)">
+            <input type="button" id="nine" value="9" onclick="getValue(document.getElementById('nine').value)">
+            <input type="button" id="times" value="*" onclick="getValue(document.getElementById('times').value)">
+          </div>
+          <div class="">
+            <input type="button" id="zero" value="0" onclick="getValue(document.getElementById('zero').value)">
+            <input type="button" id="decimal" value="." onclick="getValue(document.getElementById('decimal').value)">
+            <input type="button" id="divide" value="/" onclick="getValue(document.getElementById('divide').value)">
+            <input type="button" id="percent" value="%" onclick="getValue(document.getElementById('percent').value)">
+          </div>
+          <div class="">
+            <input type="button" id="equal" value="=" onclick="calculateResult()">
+            <button type="button" id="clear" value="" onclick="clearInput(document.getElementById('clear').value)">Clear</button>
+          </div>
+        </form>
+      </div>
+    </body>
+</html>
