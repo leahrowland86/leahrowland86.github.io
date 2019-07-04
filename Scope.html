@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Scope</title>
+        <meta http-equiv='content-type' content='text/html;charset=utf-8'>
+    </head>
+    <style media="screen">
+    </style>
+    <script type="text/javascript">
+    var a = 10;       //declare a new local variable 'a'
+    var b = 10;       //change the value of the global variable 'b'
+    function showVars() {
+      var a = 20;
+      b = 20;
+      return "Local variable 'a' = " + a + "\nGlobal variable 'b' = " + b;
+    }
+    var message = showVars();
+    alert (message + "\nGlobal variable 'a' = " + a);
+  </script>
+  <body>
+  </body>
+</html>

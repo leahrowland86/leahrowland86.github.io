@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <script type="text/javascript">
+    function capitalizeWords(string) {
+      var words = string.split(" ");
+      for (var i = 0; i < words.length; i++) {
+        var testWords = words[i];
+         var firstLetter = testWords.substr(0,1);
+         var remaining = testWords.substr(1, testWords.length -1)
+         words[i] = firstLetter.toUpperCase() + remaining
+      }
+    document.write(words.join(" "));
+  }
+  capitalizeWords("The quich brown fox jumps over the lazy dog.");
+    </script>
+  </body>
+</html>

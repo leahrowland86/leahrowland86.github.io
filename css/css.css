@@ -1,40 +1,70 @@
 /* ~~~~~~~~~~Homepage~~~~~~~~~~ */
+<<<<<<< HEAD
+=======
 @viewport {
   width: device-width ;
   zoom: 1.0 ;
 }
 
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
 html {
   scroll-behavior: smooth;
 }
 
 body {
+<<<<<<< HEAD
+  /* background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC); */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4E4E4E;
+  margin: 0px;
+=======
   font-family: Arial, Helvetica, sans-serif;
   color: #4E4E4E;
   margin: 0 auto;
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
   padding: 0px;
   }
 
 .main {
+<<<<<<< HEAD
+  height: 100vh;
+  margin: 0 auto;
+  display: block;
+=======
   background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC);
   height: 100vh;
   width: 100vw;
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
   padding-top: 300px;
   padding-bottom: 300px;
 }
 
 .about {
+<<<<<<< HEAD
+  /* background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC); */
+  height: 100vh;
+=======
   height: 100vh;
   width: 100vw;
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
   padding-top: 300px;
   padding-bottom: 300px;
 }
 
 .resume {
+<<<<<<< HEAD
+  /* background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC); */
+  height: 100vh;
+  padding-top: 30px;
+  text-align: center;
+  /* width: 750px;
+  margin: auto; */
+=======
   height: 100vh;
   width: 100vw;
   padding-top: 30px;
   text-align: center;
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
 }
 
 .resumeText {
@@ -75,7 +105,11 @@ ol {
   padding: 0;
 }
 
+<<<<<<< HEAD
+li {
+=======
 .headerlist {
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
   color: #4E4E4E;
   display: inline;
 }
@@ -117,12 +151,41 @@ ol {
    font-weight: bold;
  }
 
+<<<<<<< HEAD
+ header {
+=======
  .navbar {
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
    background: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC);
    height: 45px;
    position: fixed;
    width: 100%;
+<<<<<<< HEAD
+ }
+
+ .navbar-bar {
+   right: 0;
+   position: fixed;
+ }
+
+ .navbar-b{
+   transition-property: all;
+   transition-duration: 0.5s;
+   transition-timing-function: ease-in-out;
+   transition-delay: 0s;
+   background-color: transparent;
+   font-weight: 600;
+ }
+
+ .navbar-toggler {
+   background-color: blue;
+ }
+ .navbar-brand {
+   font-size: 1.6rem;
+   font-weight: 600;
+=======
    display: flex run-in;
    flex-wrap: wrap;
    margin: 0 auto;
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
  }

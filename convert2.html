@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Temperature</title>
+        <meta http-equiv='content-type' content='text/html;charset=utf-8'>
+    </head>
+    <script type="text/javascript">
+     var cTemp = Number(document.getElementById("id1").value);
+      function tempConvert(temp) {
+        debugger;
+        return "Temperature in Celsius: " + cTemp + " degrees \nTemperature in Fahrenheit: " + (((cTemp * 9) / 5) + 32) + " degrees";
+      }
+    </script>
+    <body>
+      <input id="id1" type="integer" name="" value="">
+      <input type="button" value="Get that temp!" onclick="alert(tempConvert(cTemp))">
+
+      <script type="text/javascript" src="convert2.js"></script>
+    </body>
+</html>

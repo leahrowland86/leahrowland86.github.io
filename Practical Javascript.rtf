@@ -1,0 +1,217 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fswiss\fcharset0 Helvetica-Oblique;
+}
+{\colortbl;\red255\green255\blue255;\red102\green0\blue141;\red5\green61\blue204;\red127\green0\blue128;
+\red5\green68\blue254;\red23\green186\blue251;\red102\green177\blue50;\red253\green154\blue9;\red0\green0\blue0;
+\red133\green0\blue175;\red221\green32\blue103;\red252\green73\blue64;\red174\green0\blue240;\red164\green8\blue3;
+\red252\green39\blue18;}
+{\*\expandedcolortbl;;\cssrgb\c48169\c12809\c62212;\cssrgb\c0\c33896\c83855;\cssrgb\c57919\c12801\c57269;
+\cssrgb\c0\c38136\c99824;\cssrgb\c0\c77905\c98860;\cssrgb\c46532\c73327\c25364;\cssrgb\c100000\c66638\c0;\cssrgb\c0\c0\c0;
+\cssrgb\c59982\c16236\c74118;\cssrgb\c90234\c23206\c47866;\cssrgb\c100000\c38374\c31601;\cssrgb\c74609\c21796\c95404;\cssrgb\c71055\c10387\c0;
+\cssrgb\c100000\c25271\c7591;}
+\margl1440\margr1440\vieww14560\viewh15220\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 	
+\f1\b\fs28 Open a new tab About:blank\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Access the Console\
+\
+Arrays
+\f0\b0 \
+An array is just a list\
+\
+\ul 1. To store something in our array\
+\ulnone Create a variable using \cf2 var\cf0 \
+\cf2 var\cf0  \cf3 name\cf0  = [\'91list\'92] 							//Array list\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 	\cf2 var\cf0  \cf3 todos\cf0  = ['item 1', 'item 2', 'item 3']\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \ul \ulc0 2. To display what is in our array\
+\ulnone Console.log lets you print data to the screen. It can take multiple items\
+console.log(\'91Text:\'92,\cf5 variable\cf0 )\
+	console.log('My todos:',\cf5 todos\cf0 )\
+	My todos: (3)\'a0["item 1", "item 2", "item 3"]\
+\
+\ul 3. To add something new to the array\
+\cf5 \ulnone variable\cf0 .push will add new items to the array\
+\cf5 variable\cf0 .push(\'91item in array to add\'92)\
+	\cf5 todos\cf0 .push(\'91item 4\'92)\
+	(4)\'a0["item 1", "item 2", "item 3", "item 4"]\
+	\cf5 todos\cf0 .push(\'91item 5\'92)\
+	(5)\'a0["item 1", "item 2", "item 3", "item 4\'94, "item 5\'94]\
+\
+\ul 4. To change something in our array\
+\cf5 \ulnone variable\cf0 [which item in the array] = \'91new value\'92\
+	\cf5 todos\cf0 [0] = \'91item 1 updated\'92\
+\
+\ul 5. To delete something from our array\
+\cf5 \ulnone variable\cf0 .splice(which item in the array, how many items in the array)\
+	\cf5 todos\cf0 .splice(0,1)\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b \cf0 Functions
+\f0\b0 \
+Functions are just recipes\
+\
+makeTurkeySandwich\
+	Get one slice of bread.\
+	Add turkey.\
+	Put a slice of bread on top.\
+\
+
+\f2\i \cf6 function
+\f0\i0 \cf0  \cf7 makeTurkeySandwich\cf0  () \{\
+	Get one slice of bread;\
+	Add turkey;\
+	Put a slice of bread on top;\
+\}\
+\
+\cf7 makeTurkeySandwich\cf0 ()\
+\
+Customizing functions\
+\
+makeSandwichWith_____\
+	Get one slice of bread.\
+	Add _____.\
+	Put a slice of bread on top.\
+\
+
+\f2\i \cf6 function
+\f0\i0 \cf0  \cf7 makeSandwichWith\cf0 (\cf8 filling\cf0 ) \{ 				//Called \'93parameters\'94 here\
+	Get one slice of bread;\
+	Add \cf8 filling\cf0 ;\
+	Put a slice of bread on top;\
+\}\
+\
+\cf7 makeSandwichWith\cf0 _\cf8 ham\cf0 _\
+\cf7 makeSandwichWith\cf0 (\'91\cf8 ham\cf9 \'92\cf0 ) 						//Called \'93arguments\'94 here\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \ul 1. It should have a function to display todos\ulnone \
+First, create a variable using \cf2 var\cf0  Array list\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 	\cf2 var\cf0  \cf3 todo\cf0  = ['item 1', 'item 2', 'item 3']\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \ul \
+\ulnone Then create a function using console.log to display the list. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf10 function\cf0  \cf5 displayTodos\cf0 ( ) \{\
+console.log('My todos: ',\cf5 todos\cf0 );\
+\}\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \ul 2. It should have a function to add todos\ulnone \
+Next create a function using push to add something new to the list. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf10 function\cf0  \cf5 addTodos\cf0 (\cf3 nextItem\cf0 ) \{\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf5 todos\cf0 .push(\cf3 nextItem\cf0 );\
+console.log('My todos: ',\cf5 todos\cf0 );\
+\}\
+QUESTION - how do I create a parameter that will incrementally add the next item #? I.e. Instead of adding New Item, it will add Item 5, Item 6\'85\
+\
+\ul 3. It should have a function to change todos\ulnone \
+Next create a function to change something in the list. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf10 function\cf0  \cf5 changeTodos\cf0 (\cf5 position\cf9 , \cf5 newValue\cf0 ) \{\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf5 todos\cf0 [\cf5 position\cf0 ] = \cf5 newValue\cf9 ;\cf0 \
+console.log('My todos: ',\cf5 todos\cf0 );\
+\}\
+\
+\ul 4. It should have a function to delete todos\ulnone \
+Finally create a function using splice to delete something in the list. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf10 function\cf0  \cf5 deleteTodos\cf0 (\cf5 position\cf9 , \cf5 howMany\cf0 ) \{\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf5 todos\cf0 .splice(\cf5 position\cf9 , \cf5 howMany\cf0 );\
+\cf5 todos\cf0 .push(\cf3 nextItem\cf0 );\
+console.log('My todos: ',\cf5 todos\cf0 );\
+\}\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b \cf0 Objects
+\f0\b0 \
+Objects group related data and functions together that describe a thing or an object. \
+Surround object with curly braces \{ \}\
+Each item within an object is called a property, and has to be separated by a comma\
+	Name of property:\'92value\'92,\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf10 var\cf0  \cf5 myComputer\cf0  = \{\
+	operatingSystem: '\cf11 mac\cf0 ',\
+	screenSize: '\cf11 15 inches\cf0 ',\
+	purchaseYear: \cf5 2011\cf0 \
+	\}\
+\
+myComputer\
+>\{operatingSystem: "mac", screenSize: "15 inches", purchaseYear: 2011\}\
+myComputer.operatingSystem\
+>"mac"\
+\
+Can place functions on objects\
+\
+\cf10 var\cf0  \cf5 leah\cf0  = \{\
+	name: \'91\cf12 Leah\cf0 \'92,\
+	sayName: \cf13 function\cf0 () \{\
+		console.log(\cf13 this\cf9 .name\cf0 );\
+	\}\
+\}\
+\
+leah.sayName();\
+Leah\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b \cf0 The for loop\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b0 \cf0 i = 0					//initialization\
+Say \'93hey\'94 if i < 3			//condition\
+Increase i by 1			//final expression\
+\
+for (initialization; condition; final expression) \{\
+   console.log(\'94hey\'94);\
+\}\
+\
+for (var i = 0; i < 3; i = i + 1) \{\
+   console.log(\'93hey\'94);\
+\}\
+\
+for (\cf13 var\cf0  \cf3 i\cf0  = 0; \cf3 i\cf0  < 3; \cf3 i\cf14 ++\cf0 ) \{\
+   console.log(\'93\cf15 hey\cf0 \'94);\
+\}\
+\
+for (\cf13 var\cf0  \cf3 i\cf0  = 0; \cf3 i\cf0  < 10; \cf3 i\cf14  \cf9 =\cf14  \cf3 i\cf14  \cf9 + 2\cf0 ) \{\
+   console.log(\'93\cf15 hey\cf0 \'94);\
+\}\
+\
+for (var i = 0; i < 3; i++) \{\
+   console.log(i);\
+\}\
+\
+To make dynamic:\
+var testArray = ['item 1', 'item 2', 'item 3'];\
+for (var i = 0; i < testArray.length; i++) \{\
+   console.log(i);\
+   console.log(testArray[i]);\
+testArray.push('extra item');\
+for (var i = 0; i < testArray.length; i++) \{\
+   console.log(i);\
+   console.log(testArray[i]);\
+\}\
+\
+}
