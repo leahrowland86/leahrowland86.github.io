@@ -18,6 +18,7 @@
 }
 
 .tipcalculator {
+  display: block;
   width: 25vw;
   margin: auto;
   text-align: center;
