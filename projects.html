@@ -3,12 +3,17 @@
   <head>
     <title>Projects</title>
     <meta http-equiv='content-type' content='text/html' charset="utf-8">
+<<<<<<< HEAD
+=======
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
     <style>
     </style>
     <link href='css/projects.css' rel='stylesheet' type='text/css' />
     <link href='css/css.css' rel='stylesheet' type='text/css' />
   </head>
   <body>
+<<<<<<< HEAD
     <header>
       <div id="header" class='navbar-bar'>
         <ul>
@@ -25,6 +30,24 @@
           </li>
           <span class='placeholder'></span>
           <li>
+=======
+    <header class="navbar">
+      <div id="header" class='navbar-bar'>
+        <ul>
+          <li class="headerlist">
+            <a class="list" href="index.html">Home</a>
+          </li>
+          <span class='placeholder'></span>
+          <li class="headerlist">
+            <a class="list" href="https://www.linkedin.com/in/leah-rowland-4840968b/" target="_blank">LinkedIn</a>
+          </li>
+          <span class='placeholder'></span>
+          <li class="headerlist">
+            <a class="list" href="https://github.com/leahrowland86" target="_blank">Github</a>
+          </li>
+          <span class='placeholder'></span>
+          <li class="headerlist">
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
             <a class="list" href="projects.html">Projects</a>
           </li>
         </ul>
@@ -34,11 +57,19 @@
     <br>
     <br>
   <div class="projects">
+<<<<<<< HEAD
     <!-- <div class="tipproject"> -->
       <div class="tipcalculator"  id="calculator">
         <form class="" action="index.html" method="post">
           <p>How much was your bill?</p>
           <input id="billamount" type="currency" placeholder="Bill amount">
+=======
+
+      <div class="tipcalculator"  id="calculator">
+        <form class="" action="index.html" method="post">
+          <p>How much was your bill?</p>
+          <input class="tipinput" id="billamount" type="currency" placeholder="Bill amount">
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
           <p>Tip amount: </p>
           <select id="tippercentage">
             <option value="">Select</option>
@@ -51,6 +82,7 @@
           </select>
         </form>
         <div id="totalTip">
+<<<<<<< HEAD
           <big><span class="text" id="bill">$0.00 + </span></big>
           <big><span class="text" id="tip">$0.00 = </span></big> <br>
           <strong><big><span class="totaltext" id="total">$0.00</span></big></strong> <br>
@@ -126,4 +158,55 @@
 
 <script type="text/javascript" src="clock.js"></script>
   </body>
+=======
+          <big><span class="tiptext" id="bill">$0.00 + </span></big>
+          <big><span class="tiptext" id="tip">$0.00 = </span></big> <br>
+          <strong><big><span class="totaltiptext" id="total">$0.00</span></big></strong> <br>
+          <br>
+          <br>
+        </div>
+        <script type="text/javascript" src="javascript/tipcalculator.js"></script>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+    <div class="clockcontainer">
+      <img class="clockimage" src="images/flower1.png" style="width:100%;" onmouseover="this.src='images/flower2.png';" onmouseout="this.src='images/flower1.png';">
+      <div class="clocktext">
+        <span id = "12Hourclock"></span>
+        <br> <br>
+        <span id = "24HourClock"></span>
+      </div>
+      <script type="text/javascript" src="javascript/clock.js"></script>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="todooutline">
+      <input class="todoinput" id="input" placeholder="To Do!">
+      <img src="images/reminder.png" style="width:20px;height:20px;" onclick="reminderNote()">
+      <div class="list">
+        <ul id="list">
+        </ul>
+      </div>
+      <script type="text/javascript" src="javascript/to do list.js"></script>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="game">
+      <br>
+      <button onclick="window.location.href='game.html';" style="width:100%;" target="_blank">Shall We Play a Game?</button>
+    </div>
+
+  </div>
+</body>
+
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 input[type=radio]:checked + label {
   color: #4E4E4E;
   font-style: normal;
@@ -91,6 +92,56 @@ body {
   color: white;
   font-size: 40px;
   position: relative;
+=======
+.projects {
+  width: 100vw;
+  margin: auto;
+  height: 100vh;
+  text-align: center;
+  /* display: flex; REMOVED
+  flex-wrap: wrap; */
+  margin-left: -.4rem;
+  margin-right: -.4rem;
+}
+
+.tiptext {
+  font-size: 1vw;
+}
+
+.totaltiptext {
+  font-size: 2vw;
+}
+
+.tipcalculator {
+  width: 25vw;
+  margin: auto;
+  text-align: center;
+  border: solid grey;
+  border-radius: 7.5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.tipinput {
+  display: flex run-in;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 10vw;
+  height: 3vh;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.20);
+  border-radius: 3px;
+}
+
+.clockcontainer {
+  width: 25vw;
+  margin: auto;
+  font: 'Bungee', Helvetica, Arial, sans-serif;
+  color: #4E4E4E;
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
 }
 
 .clocktext {
@@ -100,7 +151,66 @@ body {
   transform: translate(-50%, -50%);
 }
 
+<<<<<<< HEAD
 img {
   width: 95%;
   height: auto;
+=======
+.todoinput {
+  margin-top: 5px;
+  width: 20vw;
+  height: 3vh;
+  font-size: 20px;
+  border-radius: 3.5px;
+  border-color: grey;
+  text-align: center;
+  background: #f5f5f5;
+  display: flex run-in;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.todooutline {
+  width: 25vw;
+  height: 225px;
+  margin: auto;
+  border: solid grey;
+  border-radius: 7.5px;
+  overflow: scroll;
+  word-wrap: break-word;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.lilist {
+  text-align: left;
+  font-size: 15px;
+  margin: 0;
+  border-radius: 7.5px;
+  border-color: #4E4E4E;
+  color: #555;
+  padding: 0;
+  width: 300px;
+  font-family: courier, monospace;
+  border: 1px solid #dedede;
+  border-bottom: 1px dotted #ccc;
+  height: auto;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.lilist:hover {
+  text-decoration: line-through;
+
+  background-color: #f0f0f0;
+  -webkit-transition: all 0.2s;
+  -moz-transition:    all 0.2s;
+  -ms-transition:     all 0.2s;
+  -o-transition:      all 0.2s;
+}
+
+.game {
+  width: 10vw;
+  margin: auto;
+  height: 5vh;
+>>>>>>> 4c9dbe5bab9f70dc63efb8c87fd1a45fb68bef46
 }
