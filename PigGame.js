@@ -47,7 +47,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     document.querySelector('#score-' + activePlayer).textContent = globalScore[activePlayer];
 
     //check if the player won the game
-    if (globalScore[activePlayer] >= 10) {
+    if (globalScore[activePlayer] >= 50) {
       //player wins
       document.querySelector('#name-' + activePlayer).textContent = 'WINNER!';
       document.querySelector('.dice').style.display = 'none';
