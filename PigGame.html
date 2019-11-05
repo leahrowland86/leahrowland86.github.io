@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
         <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="css/PigGame.css">
 
         <title>Pig Game</title>
@@ -29,17 +30,47 @@
                 </div>
             </div>
 
+            <button class="btn-rules" data-target="#rules"><i class="ion-ios-help-outline"></i>Rules</button>
             <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
-            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button id="roll" class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
             <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
 
-            <img src="images/dice-5.png" alt="Dice" class="dice">
+            <label for="number-of-dice">How Many Dice?
+                <select name="Dice" id="number-of-dice">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </label>
+
+            <input type="text" class="winningscore" placeholder="Winning score">
+
+            <img src="images/dice-5.png" alt="Dice" class="dice" id="dice1">
+            <img src="images/dice-5.png" alt="Dice" class="dice" id="dice2">
         </div>
 
-          <button type='button' onclick="toggleText()">Instructions</button> <br>
-          <p id='instructions' style='display: none'>GAME RULES: The game has 2 players, playing in rounds. In each turn, a player rolls the dice as many times as they would like. Each results get added to the ROUND score. BUT, if the player rolls a 1, all of their ROUND score gets lost. After that, it's the next player's turn. The player can choose to 'Hold', which means that their ROUND score gets added to their GLOBAL score. After that, it's the next player's turn. The first player to reach 50 points on GLOBAL score wins the game.</p>
+        <!-- Rules Popup -->
+        <div id="rules">
+            <ul>
+              <li>The game has 2 players, playing in rounds.</li>
+              <li>In each turn, a player rolls the dice as many times as they wish.
+                  Each di result gets added to their current score.</li>
+              <li>The player can choose to 'Hold', which means that the current
+                  score gets added to their global score. After that, it's the next
+                  player's turn.</li>
+              <li>If the player rolls a 1, their current score is wiped out and it's 
+                  the next player's turn.
+              <li>If the player rolls two 6 in a row, or rolls two 6 at once when playing 
+                  with two di, their current score AND their global score is wiped out 
+                  and it's the next player's turn.
+              <li>The first player to reach 100 points or a chosen Final Score on
+                their global score wins the game.</li>
+            </ul>
+            <div class="close-modal">&times;</div>
+            <div class="background">&nbsp;</div>
+          </div>
 
-        <script src="javascript/PigGameInstructions.js"></script>
-        <script src="javascript/PigGame.js"></script>
+
+        <!-- <script src="javascript/PigGame.js"></script> -->
+        <script src="javascript/PigGameChallenges.js"></script>
     </body>
 </html>
