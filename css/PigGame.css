@@ -2,11 +2,41 @@
 *** GENERAL
 **********************************************/
 
+label {
+    position: absolute;
+    left: 50%;
+    top: 490px;
+    transform: translateX(-50%);
+  } 
+  
+  label select {
+    background-color: #78C5D6;
+    color: #555;
+  } 
+
+.winningscore {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 520px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 165px;
+    text-transform: uppercase;
+}
+
+.winningscore:focus {outline:none;}
+
+#dice1 {top: 120px;}
+#dice2 {top: 250px;}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 .clearfix::after {
@@ -119,6 +149,8 @@ button {
     transition: background-color 0.3s, color 0.3s;
 }
 
+button:disabled {color:red;}
+
 button:hover { font-weight: 600; }
 button:hover i { margin-right: 20px; }
 
@@ -137,14 +169,15 @@ i {
     transition: margin 0.3s;
 }
 
-.btn-new { top: 45px;}
+.btn-rules { top: 20px; }
+.btn-new { top: 60px;}
 .btn-roll { top: 403px;}
-.btn-hold { top: 467px;}
+.btn-hold { top: 450px;}
 
 .dice {
     position: absolute;
     left: 50%;
-    top: 178px;
+    top: 100px;
     transform: translateX(-50%);
     height: 100px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
@@ -152,3 +185,52 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+#rules {
+    position: absolute;
+    border-radius: 50%;
+    background-image: -webkit-linear-gradient(left,#B4C9E6,#ADDCDC);
+    color: white;
+    transform: scale(0);
+    transition: .3s;
+    transform-origin: center;
+    z-index: 10;
+  }
+  
+  #rules.show .close-modal {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    padding-bottom: 2px;
+    font-size: 60px;
+    line-height: .5;
+    z-index: 20;
+    cursor: pointer;
+  }
+
+  #rules.show .close-modal:hover {
+    font-weight: 600;
+  }
+  
+  #rules ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-40%, -40%);
+    z-index: 12;
+  }
+  
+  #rules li {
+    max-width: 80%;
+    font-size: 25px;
+    line-height: 2;
+  }
+  
+  #rules.show {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: scale(1);
+  }
